@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Para você ❤️</title>
+
+<style>
+
+body{
+background: linear-gradient(135deg,#ff4e8a,#ff9ecf);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+text-align:center;
+color:white;
+overflow:hidden;
+}
+
+#tela2{
+display:none;
+font-size:40px;
+animation: aparecer 2s;
+}
+
+@keyframes aparecer{
+from{opacity:0; transform:scale(0.5);}
+to{opacity:1; transform:scale(1);}
+}
+
+.coracao{
+font-size:120px;
+animation: bater 1s infinite;
+}
+
+@keyframes bater{
+0%{transform:scale(1);}
+50%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+.botao{
+margin-top:20px;
+padding:15px 25px;
+font-size:20px;
+border:none;
+border-radius:10px;
+background:white;
+color:#ff2a6d;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="tela1">
+<div class="coracao">❤️</div>
+<br>
+<button class="botao" onclick="mostrar()">Clique aqui</button>
+</div>
+
+<div id="tela2">
+TE AMO ❤️
+</div>
+
+<script>
+
+function mostrar(){
+document.getElementById("tela1").style.display="none";
+document.getElementById("tela2").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
